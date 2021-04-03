@@ -1,0 +1,18 @@
+#profile{
+    width: 500px;
+    height: 650px;
+    position: relative;
+}
+#writing{
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+
+    
+}
+body{
+    background-color: black;
+}
+h1{
+    color: wheat;
+}
