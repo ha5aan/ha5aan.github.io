@@ -1,18 +1,58 @@
-#profile{
-    width: 500px;
-    height: 650px;
-    position: relative;
-}
-#writing{
-    position: absolute;
-    bottom: 20px;
-    left: 150px;
 
-    
-}
 body{
+    margin: 0px;
+    padding: 0px;
     background-color: black;
+    color: wheat;
 }
 h1{
     color: wheat;
+}
+.section{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.name{
+    position: absolute;
+    text-align: center;
+    bottom: -10px;
+    color: wheat;
+    left: 40px;
+    
+}
+.designation{
+color: green;
+font-weight: bold;
+}
+
+.section-left img{
+    height: 700px;
+}
+
+.section-right{
+width: 72.15%;
+vertical-align: top;
+height: 700px;
+margin-top:20px ;
+background-color: rgb(35, 36, 46);
+
+
+}
+.section-left{
+    margin-top: 10px;
+    width: 26.85%;
+   
+    
+}
+.port{
+    color: green;
+}
+.develop{
+    width: 49.5%;
+    display: inline-block;
+
+
+    
 }
