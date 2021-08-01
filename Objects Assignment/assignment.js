@@ -73,10 +73,49 @@ this.education=education;
 this.profession=profession;
 }
 
-function get_Data(functionName,functionGender){
+function get_Data(functionName,functionGender,functionEducation,functionProfession,funcionAddress){
 
-    console.log(document.getElementById(functionName).value);
+    oname=document.getElementById(functionName).value;
+    oaddress=document.getElementById(funcionAddress).value;
+    console.log(oaddress)
+    ogender="";
+    oeducation=[];
+    oprofession=[];
     gender=document.getElementsByName(functionGender);
-    console.log(gender);
-    console.log(document.getElementsByName(functionGender));
+    educ=document.getElementsByName(functionEducation);
+    prof=document.getElementsByName(functionProfession);
+    
+    for (var i = 0, length = gender.length; i < length; i++) {
+        if (gender[i].checked) {
+            
+            ogender=gender[i].value;
+    
+            
+            break;
+        }
+    }
+
+    for (var i = 0, length = educ.length; i < length; i++) {
+        if (educ[i].checked) {
+            
+            oeducation.unshift(educ[i].value);
+        }
+    }
+
+    for (var i = 0, length = prof.length; i < length; i++) {
+        if (prof[i].checked) {
+            
+            oprofession.unshift(prof[i].value);
+        }
+    }
+
+  
+
+
+var person1= new NewPerson(oname,ogender,oaddress,oeducation,oprofession);
+console.log(person1)
+
+
+
 }
+
