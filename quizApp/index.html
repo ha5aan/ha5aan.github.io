@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="logo">
+                <img src="./images/NicePng_dc-comics-logo-png_832532.png" alt="logo">
+            </div>
+            <div class="title">
+                <h1>Superhero Quiz </h1>
+            </div>
+        </div>
+        <div class="quiz">
+            <div id="finale" class="for-quiz">
+                Your result is <span id="result"></span>
+            </div>
+<div class="details" id="personalInfo">
+
+<div class="name" >
+Enter your name
+</div>
+<div class="value">
+<input type="text" id="yourName" placeholder="Enter Your name">
+
+</div>
+
+<div class="name">
+    Enter name of your favourite Superhero
+    </div>
+    <div class="value">
+    <input type="text" id="yourHero" placeholder="Favourite SuperHero">
+    
+    </div>
+
+    <button class="start-quiz" onclick="beginQuiz('yourName','yourHero','personalInfo')"> Begin Quiz</button>
+</div>
+
+
+<div id="begin" class="multiple">       
+            <h2>Let the quiz begin</h2>
+
+            <div class="quiz-questions" >
+                <div class="headingQuiz">
+                    <h2>
+                        Welcome <span id="yourNameHere"></span>,
+                    </h2>
+                </div>
+                
+                <div class="question">
+                  <div class="qq">  Question#1) what was "Wonder Women" originally name? (select correct answer)</div>
+                    <ol>
+                        <li>
+                            <input type="radio" name="question1" id="" value="super women"> Super Women
+                        </li>
+                        <li>
+                            <input type="radio" name="question1" id="" value="Power Girl"> Power Girl
+                        </li>
+                        <li>
+                            <input type="radio" name="question1" id="" value="Black canary"> Black canary
+                        </li>
+                        <li>
+                            <input type="radio" name="question1" id="" value="superma"> Superma
+                        </li>
+                    </ol>
+                </div>
+                <div class="question">
+                <div class="qq">Question#2) What is Superman's dad's name?</div>
+                    <ol>
+                        <li>
+                            <input type="radio" name="question2" id="" value="Orlando"> Orlando
+                        </li>
+                        <li>
+                            <input type="radio" name="question2" id="" value="Kerilion"> Kerilion
+                        </li>
+                        <li>
+                            <input type="radio" name="question2" id="" value="Jor-El"> Jor-El
+                        </li>
+                        <li>
+                            <input type="radio" name="question2" id="" value="Jack Kent"> Jack Kent
+                        </li>
+                    </ol>
+                </div>
+                <div class="question">
+                <div class="qq">Question#3)What is the true identity of the Batgirl we know best?</div>
+               
+                <ol>    
+                    <li>
+                        <input type="radio" name="question3" id="" value="Dick Grayson"> Dick Grayson
+                    </li>
+                    <li>
+                        <input type="radio" name="question3" id="" value="Lois Lane"> Lois Lane
+                    </li>
+                    <li>
+                        <input type="radio" name="question3" id="" value="Barbara Gordon"> Barbara Gordon
+                    </li>
+                    <li>
+                        <input type="radio" name="question3" id="" value="Talia al Ghul"> Talia al Ghul
+                    </li>
+                </ol>
+            </div>
+
+            <div class="question">
+            <div class="qq">
+                Question#4)How did the original Flash get his powers?
+            </div>
+                <ol>    
+                    <li>
+                        <input type="radio" name="question4" id="" value="Gamma radiation"> Gamma radiation
+
+                    </li>
+                    <li>
+                        <input type="radio" name="question4" id="" value="Dr. Strange"> Dr. Strange
+                    </li>
+                    <li>
+                        <input type="radio" name="question4" id="" value="Caught in space time wrap"> Caught in space time wrap
+                    </li>
+                    <li>
+                        <input type="radio" name="question4" id="" value="Inhaled nuclear Fumes"> Inhaled nuclear Fumes
+                           </li>
+                </ol>
+            </div>
+
+            <div class="question">
+                <div class="qq">
+                    Question#5)What is the name of Batman's butler?
+                </div>
+                    <ol>    
+                        <li>
+                            <input type="radio" name="question5" id="" value="Alfred Pennyworth"> Alfred Pennyworth
+                            
+                        </li>
+                        <li>
+                            <input type="radio" name="question5" id="" value="Henry Farthing"> Henry Farthing
+                        </li>
+                        <li>    
+                            <input type="radio" name="question5" id="" value="Charles"> Charles
+                        </li>
+                        <li>
+                            <input type="radio" name="question5" id="" value="Alfred Wayn"> Alfred Wayn
+                               </li>
+                    </ol>
+                </div>
+               <button id="subQuiz" onclick="calculateResult('question1','question2','question3','question4','question5')">Submit</button>
+            </div>
+        </div>
+       
+    </div>
+
+    
+</div>
+
+    <script src="./javascript/app.js"></script>
+</body>
+
+</html>
