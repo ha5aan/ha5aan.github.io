@@ -1,4 +1,13 @@
 let name;
+let sec=0;
+let min=0;
+let msec=0;
+
+let headingMin= document.getElementById("min")
+let headingSec= document.getElementById("sec")
+let headingMsec= document.getElementById("msec")
+ let interval;
+
 function beginQuiz(name,hero,to_visible) {
     console.log(name,hero);
    name = document.getElementById(name).value;
@@ -7,9 +16,44 @@ function beginQuiz(name,hero,to_visible) {
    document.getElementById(to_visible).className="for-quiz"
    document.getElementById("yourNameHere").innerText =name;
    document.getElementById("begin").className="main-quiz";
+   document.getElementById("stopwatch").className="timer"
 }
 
-
+function timer(){
+    msec++
+    headingMsec.innerHTML=msec;
+    if(msec>=100){
+        sec++
+        headingSec.innerHTML=sec;
+        msec=0;
+        
+    }else if (sec>=10){
+        min++;
+        headingMin.innerHTML=min;
+        sec=0
+        if (min>=3){
+            document.getElementById("begin").className="multiple";
+            document.getElementById("finale").className="answer";
+            document.getElementById("result").innerHTML += "Sorry Time is UP";
+            min=0;
+            sec=0;
+            msec=0;
+            headingMin.innerHTML=min;
+            headingMsec.innerHTML=msec;
+            headingSec.innerHTML=sec;
+            clearInterval(interval)
+            
+        }
+    }
+    
+    }
+    function start(){
+    
+            interval= setInterval(timer,10)
+    
+        
+        }
+    
 
 function extractResult(question){
     for (var i = 0, length = question.length; i < length; i++) {
@@ -20,6 +64,8 @@ function extractResult(question){
         
     }
 }
+
+
 
 
 
@@ -47,10 +93,23 @@ function calculateResult(q1,q2,q3,q4,q5) {
     }
     if (quesAns.question5=="Alfred Pennyworth") {
         score++;
-    }
+    }    
+    min=0;
+    sec=0;
+    msec=0;
+    headingMin.innerHTML=min;
+    headingMsec.innerHTML=msec;
+    headingSec.innerHTML=sec;
+    clearInterval(interval)
 
     document.getElementById("begin").className="multiple";
     document.getElementById("finale").className="answer";
-    document.getElementById("result").innerHTML += score + "/5";
+    document.getElementById("result").innerHTML += "your Score is" + score + "/5";
     
+}
+
+function viewFacts(factPart,quizPart) {
+    document.getElementById('personalInfo').className="for-quiz"
+    document.getElementById(quizPart).className="for-quiz"
+    document.getElementById(factPart).className="to-show"
 }

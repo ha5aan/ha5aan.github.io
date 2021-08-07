@@ -18,10 +18,13 @@
             <div class="title">
                 <h1>Superhero Quiz </h1>
             </div>
+            <div class="multiple" id="stopwatch">
+                Min: <span id="min"> 00</span> Sec: <span id="sec">00</span> Msec: <span id="msec">00</span>
+            </div>
         </div>
         <div class="quiz">
             <div id="finale" class="for-quiz">
-                Your result is <span id="result"></span>
+                <span id="result"></span>
             </div>
 <div class="details" id="personalInfo">
 
@@ -40,8 +43,17 @@ Enter your name
     <input type="text" id="yourHero" placeholder="Favourite SuperHero">
     
     </div>
+    <div class="quizGuidlines">
+        <p>
+            This Quiz is 10 minutes long. <br>
+            There are 5 questions each question carries equal marks. <br>
+            one time limit is acieved the quiz will stop and you cannot proceed. <br>
+            If you dont want to give quiz then visit our facts portion.  
+            </p>
+    </div>
 
-    <button class="start-quiz" onclick="beginQuiz('yourName','yourHero','personalInfo')"> Begin Quiz</button>
+    <button class="start-quiz" onclick="beginQuiz('yourName','yourHero','personalInfo'), start()"> Begin Quiz</button>
+    <button class="start-quiz" onclick="viewFacts('factual' , 'begin')"> View Facts</button>
 </div>
 
 
@@ -149,12 +161,118 @@ Enter your name
                                </li>
                     </ol>
                 </div>
-               <button id="subQuiz" onclick="calculateResult('question1','question2','question3','question4','question5')">Submit</button>
+    <a href="#finale">           <button id="subQuiz" onclick="calculateResult('question1','question2','question3','question4','question5')">  Submit</button></a>
+                
+    <br>
+    <br>
+
             </div>
+
+        
         </div>
+
+        <div class="for-quiz" id="factual" >
+
+        <div class="fact">
+           
+
+            <div class="facti" >
+                <h3>Fact #1</h3>
+                <p>It was the mind-blow of recent years – in Justice League #50, Batman learned one of the Joker’s most deepest secrets. 
+                    As he sat upon the Mobius Chair, which can answer any question, Batman asked it “what is the identity of the Joker?” The answer, 
+                    to the surprise of everyone, was that there were in fact three incarnations of the Joker. The most common theory among fans has been that these three represent the Joker during the Golden (Jack Nicholson), Silver (Caesar Romero) and Bronze (Heath Ledger) ages of comic book history.</p>
+
+            </div>
+            <div class="Image">
+                <img style="height: 300px;" src="https://cdn-akkjo.nitrocdn.com/hPAtldIfpaKVwktfnjiWCdIDiHHgkoxq/assets/static/optimized/rev-3458c60/wp-content/uploads/2018/11/Mobius-Chair-batman.jpg" alt="Batman Image">
+            </div>
+
+            
+
+        </div>
+        <div class="fact">
+          
+
+            <div class="facti" >
+                <h3>Fact #2</h3>
+                <p>It goes without saying, the Silver Age was weird. With it came some of Superman’s
+                     most ludicrous talents. You had the strange but not extreme-like super-weaving that 
+                     allowed him to make dresses really fast, the mind-control just by concentrating hard, 
+                     and knowing who was calling on a rotary telephone. Our pick has to be the time when he
+                      could summon a tiny version of himself from his hand. Way to go Ant-Man Supes!</p>
+
+            </div>
+            <div class="Image">
+                <img style="height: 300px;" src="https://cdn-akkjo.nitrocdn.com/hPAtldIfpaKVwktfnjiWCdIDiHHgkoxq/assets/static/optimized/rev-3458c60/wp-content/uploads/2018/11/superman-mini-version.jpg" alt="Batman Image">
+            </div>
+
+            
+
+        </div>
+        <div class="fact">
+          
+            <div class="facti" >
+                <h3>Fact #3</h3>
+
+                <p>When it first appeared in 1939, DC was known as “Detective Comics” and that name still 
+                    holds up to this day. This would be shortened to DC for brevity, but “DC Comics” was
+                     devised to clarify you weren’t talking about the district of Columbia. That made things 
+                     awkward however, as that extended the acronym to the tongue-twister of “Detective Comics
+                      Comics.”</p>
+
+            </div>
+            <div class="Image">
+                <img style="height: 300px;" src="https://cdn-akkjo.nitrocdn.com/hPAtldIfpaKVwktfnjiWCdIDiHHgkoxq/assets/static/optimized/rev-3458c60/wp-content/uploads/2018/11/detective-comics.jpg" alt="Batman Image">
+            </div>
+
+            
+
+        </div>
+        <div class="fact">
+           
+
+            <div class="facti" >
+                <h3>Fact #4</h3>
+                <p>In 1988, DC held a tele-vote by asking readers to vote whether Jason Todd should live or die. 
+                    Todd’s abrasive, bratty and headstrong attitude made him so unpopular to the point where fans
+                     voted “yes” and so his fate was sealed by a hair’s margin (5,343 – yes, to 5,271 – no). Turns out,
+                      The Joker beating him to a pulp with a crowbar and being left in an exploding warehouse was all 
+                      down to the fans’ decision. Despite this shocking decision, DC still gives tribute to the iconic
+                       character to this very day. In fact, an Easter Egg in The Dark Knight gave a tiny shout-out to Robin!</p>
+
+            </div>
+            <div class="Image">
+                <img style="height: 300px;" src="https://cdn-akkjo.nitrocdn.com/hPAtldIfpaKVwktfnjiWCdIDiHHgkoxq/assets/static/optimized/rev-3458c60/wp-content/uploads/2018/11/robin-Jason-Todd-death.jpg" alt="Batman Image">
+            </div>
+
+            
+
+        </div>
+        <div class="fact" id="last">
+          
+
+            <div class="facti" >
+                <h3>Fact #5</h3>
+                <p>Although episodes of SuperFriends have shown him getting around by water-skiing with dolphins, 
+                    Flash does clear up in the comics that his ability to control sea life doesn’t work as well with 
+                    them as it does with simple fish. According to this Reddit user, Aquaman can’t directly control 
+                    dolphins because their brains are too well-developed, instead he can sort of “influence them and
+                     hope they follow his orders”.</p>
+
+            </div>
+            <div class="Image">
+                <img style="height: 300px;" src="https://cdn-akkjo.nitrocdn.com/hPAtldIfpaKVwktfnjiWCdIDiHHgkoxq/assets/static/optimized/rev-3458c60/wp-content/uploads/2018/11/aquaman-dolphins.jpg" alt="Batman Image">
+            </div>
+
+            
+
+        </div>
+        
+    
+    </div>
        
     </div>
-
+   
     
 </div>
 
