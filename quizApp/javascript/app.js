@@ -31,7 +31,7 @@ function timer(){
         min++;
         headingMin.innerHTML=min;
         sec=0
-        if (min>=3){
+        if (min>=10){
             document.getElementById("begin").className="multiple";
             document.getElementById("finale").className="answer";
             document.getElementById("result").innerHTML += "Sorry Time is UP";
