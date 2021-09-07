@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Style/style.css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="container">
+
+        <fieldset>   
+            <legend> Sign Up</legend>
+            <div class="login">
+             <form id="signupForm" onsubmit="signUp('floatingName','floatingEmail','floatingPassword')">
+                <div class="form-floating m-5">
+                    <input type="text" class="form-control" required id="floatingName" placeholder="name@example.com">
+                    <label for="floatingInput"> Full Name*</label>
+                  </div>
+                <div class="form-floating m-5" id="emailAddress">
+                    <input type="email" class="form-control" required id="floatingEmail" placeholder="name@example.com">
+                    <label for="floatingInput"><span > Email*</span> </label>
+                  </div>
+                  <div class="form-floating  m-5">
+                    <input type="password" class="form-control" required id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password*</label>
+                    <button class="btn btn-primary mt-5" id="submitButton" type="submit">Sign-Up</button>
+                  </div>
+    </form>
+</div>
+</fieldset>
+
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../Javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.form-control{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    
+}
+
+
+.form-control:focus{
+    border-bottom: 1px solid black;
+        box-shadow: 1px 1px 5px lightgray;
+}
+.login{
+    padding: 7%;
+    border: 2px solid lightgray;
+}
+.btn{
+    margin-left: 45%;
+}
+.datum{
+    text-decoration: underline;
+    font-weight: bold;
+}

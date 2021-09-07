@@ -1,0 +1,47 @@
+.heading{
+    color: rgb(70, 69, 69);
+    text-align: center;
+    padding-top: 2%;
+}
+
+#legend{
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.lists{
+    border: 1px solid rgb(70, 69, 69) ;
+    margin: 0% 4% 4% 4%;
+    padding: 2%;
+}
+ img{
+    height: auto;
+    max-width: 100%;
+}
+
+.addmore{
+    width: 3%;
+    height: 3%;
+    margin-top: 1%;
+float: right;
+}
+.addmore button{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.addmore button:hover{
+    background-color: lightgray;
+}
+.addmore button:focus{
+    background-color: darkgray;
+}
+
+.addmore button::after{
+    background-color: transparent;
+}
+.form-select{
+    align-self: center;
+    margin-left: 10%;
+    width: 80%;
+}
