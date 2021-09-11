@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="./../Style/Reports.css">
+    <link rel="stylesheet" href="./../Style/teamsetting.css">
+    
+    <title>Team Reports</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="./ownersView.html">  Reports </a>
+                </li>
+                <li>
+                    <a  style="  border-bottom: 1px solid orange;" href="./teamsetting.html">   Settings </a>
+                </li>
+            </ul>
+        </div>
+<div class="QuestionsPart">
+       <h4 class="Question">Questions:</h4>
+       <div class="form-floating m-5">
+        <input type="email" class="form-control" required id="floatingEmail2" placeholder="name@example.com">
+        <label for="floatingEmail2"><span id="q1"></span></label>
+      </div>
+      <div class="form-floating m-5">
+        <input type="email" class="form-control" required id="floatingEmail2" placeholder="name@example.com">
+        <label for="floatingEmail2"><span id="q2"></span></label>
+      </div>
+      <div class="form-floating m-5">
+        <input type="email" class="form-control" required id="floatingEmail2" placeholder="name@example.com">
+        <label for="floatingEmail2"><span id="q3"></span></label>
+      </div>
+
+    </div>
+    <div class="membersPart">
+        <h4 class="members">Members:</h4>
+<div class="membersList" id="allmembers">
+       
+    </div>
+    </div>
+    <div class="addMember">
+        <div class="form-floating m-5">
+            <input type="email" class="form-control" required id="floatingEmail2" placeholder="name@example.com">
+            <label for="floatingEmail2">Add Member</label>
+          </div>
+
+         
+    </div>
+    
+     <div class="forbutton">
+          <button type="button" onclick="setdetails()" class="btn btn-outline-primary">Save</button>
+        </div>
+        <div class="forbutton">
+          <button type="button" onclick="location.reload()" class="btn btn-outline-secondary">Cancel</button>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>   <br>
+        <br>
+        <br>
+        <br>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../Javascript/teamSetting.js"></script>
+</body>
+
+</html>

@@ -11,7 +11,7 @@ function signIn(email,Password) {
     let semail= document.getElementById(email).value.toLowerCase();
     let spassword= document.getElementById(Password).value;
   let details = JSON.parse(localStorage.getItem(semail));
-  alert(details)
+  
 
 if(details.email===semail && details.password===spassword){
    
@@ -36,6 +36,7 @@ function createTeam(teamName,category,teamMemebers){
     console.log(tName,tcat,tMem)
     let getTeams=JSON.parse(localStorage.getItem("teams"))
     console.log(getTeams);
+    if(getTeams)
     for (let index = 0; index < getTeams.length; index++) {
         if (getTeams[index].name===tName){
             flag=true;
@@ -53,6 +54,7 @@ function createTeam(teamName,category,teamMemebers){
     let members= tMem.split(",")
  console.log(members);
  let newTem= new CreateTeam(tName,personSignedIn,members);
+ let getTeams=[]
  getTeams.push(newTem);
  console.log(getTeams)
  localStorage.setItem("teams",JSON.stringify(getTeams));
@@ -68,7 +70,7 @@ function createTeam(teamName,category,teamMemebers){
 let personSignedIn=localStorage.getItem("personSignedIn")
 let leaderFlag = false;
 let memberFlag = false;
-
+if(createTeam1){
 for (let i = 0 ; i<createTeam1.length; i++){
     let teamCreatorNode = document.createElement("div"); 
     let headingCreatorNode = document.createElement("h4");
@@ -102,7 +104,7 @@ teamCreatorNode.setAttribute("onclick","getAnswers('"+createTeam1[i].name+"')" )
     }
 
 }
-
+}
 }
 if(leaderFlag===false){
     let teamCreatorNode = document.createElement("div"); 

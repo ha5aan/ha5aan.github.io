@@ -1,0 +1,35 @@
+.QuestionsPart{
+width: 70%;
+
+margin: auto;
+}
+
+.membersPart{
+    width: 70%;
+
+margin: auto;
+
+}
+.membersList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.member{
+    margin: 3%;
+    width: 20%;
+    border-radius: 20px;
+   
+    text-align: center;
+    background-color: lightgray;
+
+}
+.addMember{
+    width: 70%;
+    margin: auto;
+}
+.forbutton{
+display: inline-block;
+margin-left: 25%;
+}
