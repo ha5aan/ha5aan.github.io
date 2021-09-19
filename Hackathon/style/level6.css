@@ -1,0 +1,40 @@
+@keyframes changeRadius {
+   
+    10% {
+        border-radius: 40%
+    }
+    20% {
+        border-radius: 20% ;
+    }
+    30% {
+        border-radius: 50% ;
+    }
+    40% {
+        border-radius: 30% ;
+    }
+    50% {
+        border-radius: 10% ;
+    }
+    60% {
+        border-radius: 40% ;
+    }
+    70% {
+        border-radius: 20% ;
+    }
+    80% {    
+        border-radius: 10%;
+    }
+    90% { 
+        border-radius: 30%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+
+.baloon {
+    animation-name: changeRadius;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}

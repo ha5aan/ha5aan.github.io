@@ -1,0 +1,36 @@
+.container{
+    margin: 5% 10%;
+    padding: 0% 25%;
+}
+.SignInHeading{
+    font-size: 200%;
+    text-align: center;
+    background-color: rgb(202, 238, 238);
+border-radius: 15px 15px 0px 0px;
+padding: 2%;
+
+}
+.form-control{
+    border-radius: 15px;
+    margin-top: 15%;
+
+}
+
+.btn{
+    margin-left: 20%;
+}
+.SignInBody{
+   
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    background-color: rgb(226, 245, 245);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.formStyle{
+margin-top: 6%;
+}
+input{
+    margin-top: 2%;
+}

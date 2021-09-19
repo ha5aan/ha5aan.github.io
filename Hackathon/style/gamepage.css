@@ -1,0 +1,48 @@
+.gamehead{
+    margin-top: 2%;
+    text-decoration: underline;
+}
+.usergame{
+    color: blue;
+
+}
+.mainGame{
+    display: flex ;
+    width: 71%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.baloon{
+width: 100px;
+height: 100px;
+padding-top: 3%;
+text-align: center;
+
+
+border-radius: 50%;
+margin: 1% 1%;
+}
+.container{
+    display: inline-block;
+}
+#lives{
+    display: inline-block;
+    float: right;
+}
+#life{
+    color: green;
+    text-decoration: underline;
+}
+.Gameover{
+display: none;
+    margin-left: 9%;
+    font-size: 200%;
+    text-align: center;
+}
+.nextLevel{
+    display: none;
+    margin-left: 9%;
+    font-size: 200%;
+    text-align: center;
+
+}

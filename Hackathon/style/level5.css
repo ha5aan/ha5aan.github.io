@@ -1,0 +1,72 @@
+@keyframes changeRadius {
+   
+    10% {
+        border-radius: 40%;
+        margin-left: 0px;
+        width: 100px;
+        height: 100px;
+    }
+    20% {
+        border-radius: 20% ;
+        margin-left: 10px;
+        width: 90px;
+        height: 90px;
+    
+    }
+    30% {
+        border-radius: 50% ;
+        margin-left: 20px;
+        width: 80px;
+        height: 80px;
+    }
+    40% {
+        border-radius: 30% ;
+        margin-left: 30px;
+        width: 70px;
+        height: 70px;
+    
+    }
+    50% {
+        border-radius: 10% ;
+        margin-left: 40px;
+        width: 60px;
+        height: 60px;
+    }
+    60% {
+        border-radius: 40% ;
+        margin-left: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    70% {
+        border-radius: 20% ;
+        margin-left: 40px;
+        width: 60px;
+        height: 60px;
+    }
+    80% {    
+        border-radius: 10%;
+        margin-left: 30px;
+        width: 70px;
+        height: 70px;
+    }
+    90% { 
+        border-radius: 30%;
+        margin-left: 20px;
+        width: 80px;
+        height: 80px;
+    }
+    100% {
+        border-radius: 50%;
+        margin-left: 0px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.baloon {
+    animation-name: changeRadius;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}

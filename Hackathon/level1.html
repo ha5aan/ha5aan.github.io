@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" href="./style/gamepage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+    <div class="container">
+<div class="gamehead" id="usermessage">
+<h3 id="userHeading">
+Welcome <span class="usergame" id="userName"> username </span>, You are on level  <span class="usergame" id="userLevel"> level number </span>
+</h3>
+<div id="lives">
+  Lives Remaining: <span id="life"> 3 </span><br>
+  Score : <span id="score">0</span>
+    </div>
+    <a href="./index.html">     <button class="btn btn-primary mt-5" id="signUpButton" >Log out</button></a>
+</div>
+
+</div>
+
+<div class="mainGame" id="platform">
+</div>
+<div class="container Gameover" id="restartmessage">
+    <p>
+Game over <br>
+your Score is <span id="score1">Score</span><br>
+<button onclick="tryagain()" > Play Again</button>
+</p>
+</div>
+
+<div class="container nextLevel" id="nextmessage">
+    <p>
+Congrats you cleared the level <br>
+your Score is <span id="score2">Score</span><br>
+<button onclick="nextLevel()" > Next level</button>
+</p>
+</div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="./javascript/level1.js"></script>
+</body>
+</html>

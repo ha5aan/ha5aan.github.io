@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="SignInHeading">
+Sign Up
+            </div>
+            <div class="SignInBody">
+                <script type="module">
+                
+                  </script>
+                <div id="signInForm"  class="formStyle" >
+              
+                    <div class="form-floating m-5">
+                        <input type="email" class="form-control" required id="floatingEmail2" placeholder="name@example.com">
+                        <label for="floatingEmail2">Email*</label>
+                      </div>
+                      <div class="form-floating m-5">
+                        <input type="text" class="form-control" required id="floatingName" placeholder="Name">
+                        <label for="floatingEmail2">Name*</label>
+                      </div>
+                      <div class="form-floating  m-5" id="passwordcontainer">
+                        <input type="password" class="form-control" required id="floatingPassword2" placeholder="Password">
+                        <label for="floatingPassword2">Password*</label>
+                        <a href="./index.html"> <button class="btn btn-primary mt-5" id="submitButton2">Sign In</button></a>
+                        <button class="btn btn-primary mt-5" id="signUpButton" onclick="signUp()">Sign UP</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="./javascript/signInSignUp.js"></script>
+</body>
+</html>
